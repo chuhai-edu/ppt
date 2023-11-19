@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.kennethcachia.com/shape-shifter/ -->
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body,
+        #container {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            color: #FFFFFF;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        #container {
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        .text-slide {
+            display: inline-block;
+            position: absolute;
+            left: 100%;
+            animation-name: slide-left;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+
+        @keyframes slide-left {
+            0% {
+                left: 100%;
+                /* 动画开始时，文字位于屏幕右侧外部 */
+            }
+
+            100% {
+                left: -100%;
+                /* 动画结束时，文字完全移出屏幕左侧 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="text-slide">遥遥领先</div>
+    </div>
+    <script>
+        function adjustFontSize() {
+            // 获取窗口宽度
+            var width = window.innerWidth;
+
+            // 设置基础字体大小
+            var baseFontSize = 20; // 基准字体大小
+
+            // 计算新的字体大小，这里是一个简单的例子：窗口每宽100px，字体大小增加1px
+            var newFontSize = baseFontSize + (width / 100 - 10);
+
+            // 限制字体大小的范围
+            newFontSize = Math.max(Math.min(newFontSize, 40), 12);
+
+            // 更新所有段落的字体大小
+            const container = document.getElementById('container');
+            container.style.fontSize = newFontSize + 'px';
+        }
+
+        // 初始化字体大小
+        adjustFontSize();
+
+        // 监听窗口大小变化
+        window.addEventListener('resize', adjustFontSize);
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        var textList = ['遥遥领先！', '遥遥领先', '遥遥领先！', '💪遥遥领先', '遥遥领先', '🫣我们一直领先', '遥遥领先于同行', '我们继续领先', '领先超过50%']
+
+        function start() {
+            var maxTop = document.documentElement.clientHeight - 40;
+            const container = document.getElementById('container');
+            container.style.opacity = 0.5
+
+            var width = window.innerWidth;
+
+            var minDuration = (width / 240) + 1
+            var maxDuration = minDuration * 1.5
+            for (let i = 0; i < 100; i++) {
+                const div = document.createElement('div');
+                div.classList.add('text-slide');
+
+                const top = getRandomInt(0, maxTop);
+                div.style.top = top + 'px';
+                var duration = getRandomInt(minDuration, maxDuration)
+                div.style['animation-duration'] = duration + 's';
+                var delay = getRandomInt(0, duration * 100) / 100
+                div.style['animation-delay'] = delay + 's';
+
+                var text = textList[getRandomInt(0, textList.length - 1)];
+                div.textContent = text;
+
+                container.appendChild(div);
+            }
+            setTimeout(function () {
+                container.style.opacity = 0
+                setTimeout(function () {
+                    while (container.firstChild) {
+                        container.removeChild(container.firstChild);
+                    }
+                }, 3000)
+            }, 15000)
+        }
+        start()
+
+    </script>
+</body>
+
+</html>
