@@ -1,40 +1,176 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.tb {
+			border-collapse: separate !important;
+			border-spacing: 10px !important;
+		}
+
+		.tb td,
+		.tb th {
+			text-align: center !important;
+			vertical-align: middle !important;
+			border-bottom: none !important;
+			padding: 20px 40px !important;
+			border-radius: 5px;
+		}
+
+		.category-item {
+			display: flex;
+			margin: 20px 0;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.category-item h3 {
+			width: 3em;
+			display: block;
+			flex-shrink: 0;
+			margin-bottom: 0;
+		}
+
+		.category-item .content {
+			flex: 1;
+		}
+
+		.category-item .content p {
+			text-align: left;
+			font-size: 0.7em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section><a href="#/1">Start</a></section>
+			<section data-background-iframe="./pages/start/start.html" data-background-interactive></section>
+			<section>
+				<h3>Part 2</h3>
+				<h1>重组与分类</h1>
+			</section>
+			<section>
+				<h2>分类结果</h2>
+				<table class="tb" style="margin-top:50px;">
+					<thead>
+						<tr>
+							<th style="background-color: #4f3a12;">释“礼”</th>
+							<th style="background-color: #0f3e18;" colspan="3">含义</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2" style="background-color: #64512b;">不同意义</td>
+							<td colspan="2" style="background-color: #1d5428;">内在</td>
+							<td style="background-color: #1d5428;">外在表现形式</td>
+						</tr>
+						<tr>
+							<td style="background-color: #487150;">礼法</td>
+							<td style="background-color: #487150;">礼俗</td>
+							<td style="background-color: #487150;">仪式</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section data-auto-animate>
+				<h2>分类的详细解释</h2>
+				<div data-id="category-item1" class="category-item">
+					<h3>礼法</h3>
+				</div>
+				<div data-id="category-item2" class="category-item">
+					<h3>礼俗</h3>
+				</div>
+				<div data-id="category-item3" class="category-item">
+					<h3>仪式</h3>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<h2>分类的详细解释</h2>
+				<div data-id="category-item1" class="category-item">
+					<h3 style="color: #e08b95 !important;">礼法</h3>
+					<div class="content" style="color: #efd3d6 !important;">
+						<p>关键词：国家层面，制度，约束力（违反礼法会扰乱国家秩序，受到惩罚）</p>
+						<p>举例：周朝天子祭祀使用九鼎，诸侯用七鼎</p>
+					</div>
+				</div>
+				<div data-id="category-item2" class="category-item">
+					<h3 style="color: #92bbe5 !important;">礼俗</h3>
+					<div class="content" style="color: #cbdced !important;">
+						<p>关键词：社会层面（因俗制礼），道德规范，约束力（违反礼俗会受人厌恶）</p>
+						<p>举例：百善孝为先</p>
+					</div>
+				</div>
+				<div data-id="category-item3" class="category-item">
+					<h3 style="color: #8aea8a !important;">仪式</h3>
+					<div class="content" style="color: #cbeecb !important;">
+						<p>关键词：外在的表现形式</p>
+						<p>举例：毕业礼——即毕业仪式</p>
+					</div>
+				</div>
+
+			</section>
+			<section>
+				<h3>Part 7</h3>
+				<h1>提问</h1>
+			</section>
+			<section>
+				<p>1. 西汉时，董仲舒提出“罢黜百家独尊儒术”，从礼的角度看，是从以下那个分类出发?</p>
+				<p style="font-size: 0.8em;opacity: 0.8;">
+					<span style="margin:0 1.5em">A 礼法</span>
+					<span style="margin:0 1.5em">B 礼俗</span>
+					<span style="margin:0 1.5em">C 仪式</span>
+				</p>
+				<p style="margin-top:3em;">2. 朱自清《经典常谈》中“三礼第五”中谈到：“不近人情的伪礼，只会束缚人”。结合社会现状，如何理解朱自清的这句话？</p>
+			</section>
+			<section>
+				<h3>Part 8</h3>
+				<h1>总结</h1>
+			</section>
+			<section>
+				<h2>分解与发展的图解</h2>
+				<img src="./pages/end/img.svg" />
+			</section>
+			<section data-background-image="./pages/end/kz.png" data-background-position="bottom left"
+				data-background-size="30% auto" data-background-opacity="0.4">
+				<p style="text-align: left; font-size: 0.8em; text-indent: 2em; line-height: 1.5em;">
+					<b
+						style="font-size: 1.5em;">礼</b>不仅是儒家的核心，与此同时也是中国自古以来社会发展的核心之一，。上到国家大事，下到吃穿住行，礼无处不在。上面我们介绍了礼的地位以及发展轨迹，由此我们可以看出，其实礼的发展就是社会发展一个缩影，也是人们道德品质发展的一个缩影。在这里我们再来理解朱自清说过的这句话：“不近人情的伪礼，只会束缚人”。能够得出一些道理与大家共享
+				</p>
+				<p style="text-align: left; font-size: 0.8em; text-indent: 2em;line-height: 1.5em;">
+					胡适说过：“一时代有一时代之文学”，我们也能说一时代有一时代之礼。我们在学习儒家的同时，也要明白古籍与书本上的“礼”也有着时代的局限性。我们要辩证地学习，不可盲目将古人的道德品质的要求套用到现代社会之中。
+				</p>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
