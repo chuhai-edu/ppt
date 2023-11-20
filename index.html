@@ -81,7 +81,7 @@
 
 		.p1-container .item.active {
 			box-shadow: 0 0 10px #068de9;
-			animation: breathingEffect 3s ease-in-out infinite;
+			animation: breathingEffect 2s ease-in-out infinite;
 		}
 
 		@keyframes breathingEffect {
@@ -94,6 +94,17 @@
 			50% {
 				box-shadow: 0 0 20px #068de9, 0 0 30px #068de9, 0 0 40px #068de9;
 			}
+		}
+
+		.p5-chart {
+			display: flex;
+			align-items: end;
+			justify-content: center;
+			gap: 0.4em;
+		}
+
+		.p5-chart .item {
+			width: 1em;
 		}
 	</style>
 </head>
@@ -186,40 +197,134 @@
 			</section>
 			<section data-auto-animate>
 				<h2>分类的详细解释</h2>
-				<div data-id="category-item1" class="category-item">
-					<h3>礼法</h3>
+				<div class="category-item">
+					<h3 data-id="category-item1">礼法</h3>
 				</div>
-				<div data-id="category-item2" class="category-item">
-					<h3>礼俗</h3>
+				<div class="category-item">
+					<h3 data-id="category-item2">礼俗</h3>
 				</div>
-				<div data-id="category-item3" class="category-item">
+				<div class="category-item">
 					<h3>仪式</h3>
 				</div>
 			</section>
 			<section data-auto-animate>
 				<h2>分类的详细解释</h2>
-				<div data-id="category-item1" class="category-item">
-					<h3 style="color: #e08b95 !important;">礼法</h3>
+				<div class="category-item">
+					<h3 style="color: #e08b95 !important;" data-id="category-item1">礼法</h3>
 					<div class="content" style="color: #efd3d6 !important;">
 						<p>关键词：国家层面，制度，约束力（违反礼法会扰乱国家秩序，受到惩罚）</p>
 						<p>举例：周朝天子祭祀使用九鼎，诸侯用七鼎</p>
 					</div>
 				</div>
-				<div data-id="category-item2" class="category-item">
-					<h3 style="color: #92bbe5 !important;">礼俗</h3>
+				<div class="category-item">
+					<h3 style="color: #92bbe5 !important;" data-id="category-item2">礼俗</h3>
 					<div class="content" style="color: #cbdced !important;">
 						<p>关键词：社会层面（因俗制礼），道德规范，约束力（违反礼俗会受人厌恶）</p>
 						<p>举例：百善孝为先</p>
 					</div>
 				</div>
-				<div data-id="category-item3" class="category-item">
-					<h3 style="color: #8aea8a !important;">仪式</h3>
+				<div class="category-item">
+					<h3 style="color: #8aea8a !important;" data-id="category-item3">仪式</h3>
 					<div class="content" style="color: #cbeecb !important;">
 						<p>关键词：外在的表现形式</p>
 						<p>举例：毕业礼——即毕业仪式</p>
 					</div>
 				</div>
 
+			</section>
+			<section>
+				<h3>Part 3</h3>
+				<h1>分类之详解</h1>
+			</section>
+			<section>
+				<h3>Part 4</h3>
+				<h1>分类中遇到的困难</h1>
+			</section>
+			<section data-auto-animate>
+				<h3>Part 5</h3>
+				<h1>礼在儒家的地位</h1>
+				<div class="p5-chart">
+					<div class="item" data-id="p5-chart-1"></div>
+					<div class="item" data-id="p5-chart-2"></div>
+					<div class="item" data-id="p5-chart-3"></div>
+					<div class="item" data-id="p5-chart-4"></div>
+					<div class="item" data-id="p5-chart-5"></div>
+					<div class="item" data-id="p5-chart-6"></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<h2>核心价值观</h2>
+				<div class="p5-chart active">
+					<img src="pages/p5/1.png" style="width:5em;margin:0 1em 0 0;" />
+					<div class="item" data-id="p5-chart-1" style="height:2em;background-color: #6e6e6e;"></div>
+					<div class="item" data-id="p5-chart-2" style="height:1.6em;background-color: #6e6e6e;"></div>
+					<div class="item" data-id="p5-chart-3" style="height:8em;background-color: #068de9;"></div>
+					<div class="item" data-id="p5-chart-4" style="height:2.2em;background-color: #6e6e6e;"></div>
+					<div class="item" data-id="p5-chart-5" style="height:1em;background-color: #6e6e6e;"></div>
+					<div class="item" data-id="p5-chart-6" style="height:2.6em;background-color: #6e6e6e;"></div>
+				</div>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz.png" data-background-position="bottom left"
+				data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>“礼”与中国传统文化</h2>
+				<p>“不学礼，无以立。”</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz2.png"
+				data-background-position="bottom right" data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>“礼”与中国古代政治</h2>
+				<p>“法出于礼。”</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz.png" data-background-position="bottom left"
+				data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>“礼”与中华民族精神</h2>
+				<p>“礼之用，和为贵。”</p>
+				<p>“礼”的终极目标</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz2.png"
+				data-background-position="bottom right" data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>礼与仁的关系</h2>
+				<p>“道德仁义，非礼不成。”</p>
+			</section>
+			<section>
+				<h3>Part 6</h3>
+				<h1>礼的发展史</h1>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz.png" data-background-position="bottom left"
+				data-background-size="30% auto" data-background-opacity="0.4">
+				<h3>“礼”的形成发展和儒家思想的关系</h3>
+				<p style="text-indent: 2em;">在儒家思想中，“礼”是指规范制约社会与人生各方面的典章制度和道德规范，行为准则，是儒家思想体系的核心价值观念之一。</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz2.png"
+				data-background-position="bottom right" data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>儒家思想的起源</h2>
+				<p>周公与儒</p>
+				<p>非德之天 德性之天</p>
+				<p>祭祀文化 礼乐文化</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/end/kz.png" data-background-position="bottom left"
+				data-background-size="30% auto" data-background-opacity="0.4">
+				<h2>发展衍变过程中“礼”的概念延展</h2>
+				<p>礼学 礼制 礼文化 礼仪 礼法 礼节</p>
+				<p>礼教 礼貌 礼俗 礼物 礼数 礼俗</p>
+			</section>
+			<section data-auto-animate data-background-image="./pages/p6/bg1.jpeg" data-background-opacity="0.1">
+				<h3>“礼”最初是原始社会祭祀神灵、祈求幸福的一种宗教仪式。</h3>
+				<p>“巫” 属于“礼”的最初形式之一么？</p>
+			</section>
+			<section data-auto-animate>
+				<h2>“礼”的发展与衍变历程</h2>
+				<p style="font-size: 0.8em;opacity: 0.7;">政治制度 礼制 礼学 礼俗 礼仪</p>
+				<ul>
+					<li>周公旦“制礼作乐”</li>
+					<li>汉代“独尊儒术”礼制 </li>
+					<li>宋朝 儒学礼学大师 朱熹</li>
+					<li>明清 传统“礼”的社会实践 走向衰落 社会结构变化 洋务运动</li>
+					<li>现代 “礼”的复兴 礼仪 礼俗 取其精华 去其糟粕</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>“礼”贯穿儒家核心价值体系</h2>
+				<p>影响中国社会秩序 典章制度 道德规范 行为准则 个人修养等方面发展</p>
 			</section>
 			<section>
 				<h3>Part 7</h3>
