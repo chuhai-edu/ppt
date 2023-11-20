@@ -54,6 +54,47 @@
 			text-align: left;
 			font-size: 0.7em;
 		}
+
+		.p1-container {
+			display: flex;
+			justify-content: center;
+			gap: 3%;
+		}
+
+		.p1-container .item {
+			width: 30%;
+			border-radius: 0.5em;
+			height: 10em;
+			background-color: #FFFFFF;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			color: #000;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.p1-container .item .text {
+			font-size: 6em;
+		}
+
+		.p1-container .item.active {
+			box-shadow: 0 0 10px #068de9;
+			animation: breathingEffect 3s ease-in-out infinite;
+		}
+
+		@keyframes breathingEffect {
+
+			0%,
+			100% {
+				box-shadow: 0 0 10px #068de9, 0 0 20px #068de9;
+			}
+
+			50% {
+				box-shadow: 0 0 20px #068de9, 0 0 30px #068de9, 0 0 40px #068de9;
+			}
+		}
 	</style>
 </head>
 
@@ -66,12 +107,45 @@
 				<h3>Part 1</h3>
 				<h1>"礼"之介绍</h1>
 			</section>
-			<section data-background-video="./pages/p1/text.mp4"></section>
 			<section>
-				<h2>说文解字</h2>
+				<h2>履也。所以事神致福也。</h2>
+				<h2>从示从豊，豊亦声。</h2>
 			</section>
-			<section>
-				<h2>说文解字2</h2>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item active" style="background-image: url(pages/p1/1.JPG);" data-id="p1-1"></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item" style="background-image: url(pages/p1/1.JPG);" data-id="p1-1"></div>
+					<div class="item active" style="background-image: url(pages/p1/2.JPG);" data-id="p1-2"></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item" style="background-image: url(pages/p1/1.JPG);" data-id="p1-1"></div>
+					<div class="item" style="background-image: url(pages/p1/2.JPG);" data-id="p1-2"></div>
+					<div class="item active" style="background-image: url(pages/p1/3.PNG);" data-id="p1-3"></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item active" data-id="p1-4"><span class="text">豊</span></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item" data-id="p1-4"><span class="text">豊</span></div>
+					<div class="item active" data-id="p1-5"><span class="text">醴</span></div>
+				</div>
+			</section>
+			<section data-auto-animate>
+				<div class="p1-container">
+					<div class="item" data-id="p1-4"><span class="text">豊</span></div>
+					<div class="item" data-id="p1-5"><span class="text">醴</span></div>
+					<div class="item active" style="background-image: url(pages/p1/6.PNG);" data-id="p1-6"></div>
+				</div>
 			</section>
 			<section data-background-iframe="./pages/yyds/index.html" data-background-interactive
 				style="text-shadow: 0 0 0.5em #000000">
