@@ -59,7 +59,7 @@ var S = {
     // S.UI.simulate('第5組報告|GROUP 5|論儒家之|禮');
 
     S.play([
-      { content: '第5組報告', timeout: 3000 },
+      { content: '第4組報告', timeout: 3000 },
       // { content: 'GROUP 5', timeout: 2000 },
       { content: '論儒家之', timeout: 3000 },
       { content: '禮', timeout: 5000 },
